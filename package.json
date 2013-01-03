@@ -16,5 +16,9 @@
     "interpolation"
   ],
   "author": "Quildreen \"Sorella\" Motta (http://killdream.github.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "noire": "~0.2.3",
+    "boo": "~1.2.2"
+  }
 }
