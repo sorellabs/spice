@@ -1,0 +1,20 @@
+{
+  "name": "spice",
+  "version": "0.1.0",
+  "description": "No-frills string interpolation library.",
+  "main": "spice.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/killdream/spice.git"
+  },
+  "keywords": [
+    "string",
+    "formatting",
+    "interpolation"
+  ],
+  "author": "Quildreen \"Sorella\" Motta (http://killdream.github.com/)",
+  "license": "MIT"
+}
