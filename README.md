@@ -40,9 +40,7 @@ Testing
 The test cases uses [Mocha][], [Noire][] and [Sinon][]. Just grab everything
 from NPM and run the test-cases by issuing `mocha` from the command line:
 
-    $ npm install -g mocha
-    $ npm install --dev    # To grab the testing dependencies
-    $ npm install sinon    # It's not listed in --dev because C++ deps
+    $ npm install         # If you haven't grabbed devDeps yet
     $ npm run-script test
     
 [Mocha]: http://visionmedia.github.com/mocha/
