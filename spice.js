@@ -1,4 +1,7 @@
-/// spice.js --- No-frills string interpolation
+/// Module spice
+//
+// No-frills string interpolation
+//
 //
 // Copyright (c) 2013 Quildreen "Sorella" Motta
 //
@@ -21,8 +24,6 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-/// Module spice
-
 
 
 //// -- Constants & Aliases --------------------------------------------
@@ -32,20 +33,20 @@ var templateRE = /{(\\?:)([^}]+)}/g
 
 //// -- Helpers --------------------------------------------------------
 
-///// Function callable_p //////////////////////////////////////////////////////
+///// Function callable_p
 //
 // Is a subject callable?
 //
-// callable_p :: a -> Bool
+// :: a -> Bool
 function callable_p(subject) {
   return typeof subject == 'function' }
 
 
-///// Function as_value ////////////////////////////////////////////////////////
+///// Function as_value
 //
 // Returns the actual substitution for the given value/key.
 //
-// as_value :: (a | (String -> String)), String -> String
+// :: TemplateValue, String -> String
 function as_value(value, key) {
   return callable_p(value)?  value(key)
   :      /* otherwise */     value }
@@ -56,13 +57,13 @@ function as_value(value, key) {
 
 ///// Interface TemplateValue
 //
-// TemplateValue :: String | (String -> String)
+// :: String | (String -> String)
 
 
 
 //// -- Core implementation --------------------------------------------
 
-///// Function format //////////////////////////////////////////////////////////
+///// Function format
 //
 // Performs string interpolation given a template string as basis, and a
 // substitution map.
@@ -70,12 +71,12 @@ function as_value(value, key) {
 // If a mapping is not given, we assume it to be empty, in which case
 // the template variables are simply stripped away.
 //
-// A template variable is a special construct in the form::
+// A template variable is a special construct in the form:
 //
 //     <template-variable> ::= "{:" <any but "}"> "}"
 //
 // For example, to provide a "Hello, world!" template, that adjusts to a
-// given name, one could write::
+// given name, one could write:
 //
 //     format("Hello, {:subject}!", { subject: "world" })
 //     // => "Hello, world!"
@@ -87,9 +88,10 @@ function as_value(value, key) {
 //     format("Hello, {\\:subject}!", { subject: "world" })
 //     // => "Hello, {:subject}!"
 //
-//     // Remember that backslashes must be escaped inside String literals.
+//     // Remember that backslashes must be escaped inside String
+//     // literals.
 //
-// format :: String, { String -> TemplateValue } -> String
+// :: String, { String -> TemplateValue } -> String
 function format(string, mappings) {
   mappings = mappings || {}
   return string.replace(templateRE, resolve_identifier)

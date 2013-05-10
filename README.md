@@ -1,4 +1,4 @@
-Spice
+Spice [![Build Status](https://travis-ci.org/killdream/spice.png)](https://travis-ci.org/killdream/spice) ![Dependencies Status](https://david-dm.org/killdream/spice.png)
 =====
 
 No-frills string interpolation library.
@@ -24,21 +24,27 @@ String.prototype.format = function(mappings) {
 ```
 
 
-Installing
-----------
+## Installing
 
-Just grab it from NPM for the easy-modo install:
+Grab it from NPM:
 
     $ npm install spice
     # Then require it as usual
     node> var spice = require('spice')
 
 
-Testing
--------
+## Platform support
 
-The test cases uses [Mocha][], [Noire][] and [Sinon][]. Just grab everything
-from NPM and run the test-cases by issuing `mocha` from the command line:
+ES3 and beyond!
+
+[![browser support](http://ci.testling.com/killdream/spice.png)](http://ci.testling.com/killdream/spice)
+
+
+## Testing
+
+The test cases uses [Mocha][], [Noire][] and [Sinon][]. Just grab
+everything from NPM and run the test-cases by issuing `mocha` from the
+command line:
 
     $ npm install         # If you haven't grabbed devDeps yet
     $ npm run-script test
@@ -48,13 +54,8 @@ from NPM and run the test-cases by issuing `mocha` from the command line:
 [Sinon]: http://sinonjs.org/
 
 
-Licence
--------
+## Licence
 
-Spice is licensed under the delicious and permissive [MIT][] licence. You can
-happily copy, share, modify, sell or whatever — refer to the actual licence
-text for `less` information:
+MIT/X11. Just do whatever you want to.
 
     $ less LICENCE
-    
-[MIT]: https://github.com/killdream/spice/raw/master/LICENCE
