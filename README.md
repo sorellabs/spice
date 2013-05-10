@@ -42,17 +42,10 @@ ES3 and beyond!
 
 ## Testing
 
-The test cases uses [Mocha][], [Noire][] and [Sinon][]. Just grab
-everything from NPM and run the test-cases by issuing `mocha` from the
-command line:
+For Node, just:
 
-    $ npm install         # If you haven't grabbed devDeps yet
-    $ npm run-script test
+    $ npm test
     
-[Mocha]: http://visionmedia.github.com/mocha/
-[Noire]: http://github.com/killdream/noire
-[Sinon]: http://sinonjs.org/
-
 
 ## Licence
 
