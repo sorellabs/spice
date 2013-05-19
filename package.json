@@ -1,10 +1,10 @@
 {
   "name": "spice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "No-frills string interpolation library.",
   "main": "spice.js",
   "scripts": {
-    "test": "node ./test/tap"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   "devDependencies": {
     "brofist-tap": "~0.1.0",
     "chai": "~1.6.0",
-    "brofist": "~0.2.2"
+    "brofist": "~0.2.2",
+    "browserify": "~2.14.1"
   },
   "testling": {
     "files": "test/tap.js",
