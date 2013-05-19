@@ -26,12 +26,24 @@ String.prototype.format = function(mappings) {
 
 ## Installing
 
-Grab it from NPM:
+The easiest way is to grab it from NPM (use [browserify][] if you're on a
+Browser):
 
     $ npm install spice
     # Then require it as usual
     node> var spice = require('spice')
+    
+If you **really** want to suffer with old and terrible module/no-module
+formats, you can run `make dist` yourself:
 
+    $ git clone git://github.com/killdream/spice
+    $ cd spice
+    $ npm install
+    $ make dist
+    # And incldue `dist/spice.umd.js` on your AMD/script tag/whatever.
+
+
+[browserify]: https://github.com/substack/node-browserify
 
 ## API
 
