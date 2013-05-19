@@ -74,7 +74,7 @@ format("Hello, {\\:subject}!", { subject: "world" })
 
 ES3 and beyond!
 
-[![browser support](http://ci.testling.com/killdream/spice.png)](http://ci.testling.com/killdream/spice)
+[![browser support](https://ci.testling.com/killdream/spice.png)](http://ci.testling.com/killdream/spice)
 
 
 ## Testing
