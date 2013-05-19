@@ -1,6 +1,6 @@
 {
   "name": "spice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "No-frills string interpolation library.",
   "main": "spice.js",
   "scripts": {
