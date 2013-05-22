@@ -39,7 +39,7 @@ formats, you can run `make dist` yourself:
     $ git clone git://github.com/killdream/spice
     $ cd spice
     $ npm install
-    $ make dist
+    $ make bundle
     # And incldue `dist/spice.umd.js` on your AMD/script tag/whatever.
 
 
@@ -94,6 +94,14 @@ ES3 and beyond!
 For Node, just:
 
     $ npm test
+    
+    
+For the browser:
+
+    $ npm install -g brofist-browser
+    $ make test
+    $ brofist-browser serve test/specs
+    # Then point your browsers to the URL on yer console.
     
 
 ## Licence
