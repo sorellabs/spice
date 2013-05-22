@@ -34,7 +34,7 @@ Browser):
     node> var spice = require('spice')
     
 If you **really** want to suffer with old and terrible module/no-module
-formats, you can run `make dist` yourself:
+formats, you can run `make bundle` yourself:
 
     $ git clone git://github.com/killdream/spice
     $ cd spice
