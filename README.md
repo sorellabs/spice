@@ -1,5 +1,11 @@
-Spice [![Build Status](https://travis-ci.org/killdream/spice.png)](https://travis-ci.org/killdream/spice) ![Dependencies Status](https://david-dm.org/killdream/spice.png)
+Spice
 =====
+
+[![Build Status](https://secure.travis-ci.org/robotlolita/spice.png?branch=master)](https://travis-ci.org/robotlolita/spice)
+[![NPM version](https://badge.fury.io/js/spice.png)](http://badge.fury.io/js/spice)
+[![Dependencies Status](https://david-dm.org/robotlolita/spice.png)](https://david-dm.org/robotlolita/spice)
+[![stable](http://hughsk.github.io/stability-badges/dist/stable.svg)](http://github.com/hughsk/stability-badges)
+
 
 No-frills string interpolation library.
 
@@ -36,7 +42,7 @@ Browser):
 If you **really** want to suffer with old and terrible module/no-module
 formats, you can run `make bundle` yourself:
 
-    $ git clone git://github.com/killdream/spice
+    $ git clone git://github.com/robotlolita/spice
     $ cd spice
     $ npm install
     $ make bundle
@@ -86,7 +92,7 @@ format("Hello, {\\:subject}!", { subject: "world" })
 
 ES3 and beyond!
 
-[![browser support](https://ci.testling.com/killdream/spice.png)](http://ci.testling.com/killdream/spice)
+[![browser support](https://ci.testling.com/robotlolita/spice.png)](http://ci.testling.com/robotlolita/spice)
 
 
 ## Testing
